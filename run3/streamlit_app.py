@@ -1,15 +1,26 @@
 # importing the necessary libraries
 import streamlit as st
+from tensorflow.keras.models import load_model
+from PIL import Image
+import numpy as np
 
 # loading the trained model
-model = ... 
+model = load_model('models/model_InceptionV3_Adam.h5') 
 
 # defining necessary functions
-def preprocess_input(input_data):
-    ...
+def preprocess_input(uploaded_file):
+    img = Image.open(uploaded_file)
+    # assuming model expects 224x224 images
+    img = img.resize((224, 224))  
+    # normalizing pixel values to [0, 1]
+    img = np.array(img) / 255.0  
+    # assuming model expects RGB images
+    img = img.reshape(1, 224, 224, 3)  
+    return img
 
 def make_prediction(input_data):
-    ...
+    prediction = model.predict(input_data)
+    return 'Cancerous' if prediction > 0.5 else 'Benign'
 
 # setting up the app title and description
 st.title('MADAIN: Skin Cancer Prediction App')
