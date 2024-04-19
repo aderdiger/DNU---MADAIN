@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
 
 # loading the trained model
-model = load_model('models/model_InceptionV3_Adam.h5') 
+model = load_model('https://raw.githubusercontent.com/mustafacanayter/MADAIN/main/run3/models/model_InceptionV3_Adam.h5') 
 
 # defining necessary functions
 def preprocess_input(uploaded_file):
