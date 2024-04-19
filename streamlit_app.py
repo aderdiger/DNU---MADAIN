@@ -16,7 +16,7 @@ model_url = 'https://raw.githubusercontent.com/mustafacanayter/MADAIN/main/run3/
 
 # Download the model file from the URL
 response = requests.get(model_url)
-time.sleep(5)
+
 
 # # Check if the request was successful
 # if response.status_code == 200:
