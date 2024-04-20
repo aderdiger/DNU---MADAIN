@@ -1,4 +1,4 @@
-# 🎯 Skin Cancer Prediction using Deep Learning 🩺
+# MADAIN (Mole Analysis with Deep Adam-Optimized Inception Network): Skin Cancer Prediction Using Deep Learning
 
 ## 🔍 Introduction
 Skin cancer is a prevalent and potentially life-threatening disease that requires early detection for effective treatment. In this project, we developed a deep learning model that can predict whether a mole is cancerous or benign based on image data. By leveraging convolutional neural networks (CNNs) and transfer learning, we aimed to create an accurate and reliable tool to assist in the early identification of skin cancer.
