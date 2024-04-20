@@ -1,0 +1,132 @@
+
+
+/* Styles for screens between 576px and 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Adjust styles for small screens */
+  }
+  
+  /* Styles for screens between 768px and 991.98px */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Adjust styles for medium screens */
+  }
+  
+  /* Styles for screens between 992px and 1199.98px */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Adjust styles for large screens */
+  }
+  
+  /* Styles for screens 1200px and above */
+  @media (min-width: 1200px) {
+    /* Adjust styles for extra large screens */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 767.98px) {
+    .overlay-container {
+      width: 55%;
+      padding: 2vw;
+    }
+  
+    .overlay-container-research {
+      width: 65%; /* Adjust the width for smaller screens */
+      padding: 2vw;
+    }
+  
+    .typing-text.heading {
+      font-size: 10vw;
+    }
+  
+    .research-content h2 {
+      font-size: 5vw;
+    }
+  
+    .apa-citation p {
+      font-size: 3vw;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .overlay-container {
+      width: 55%;
+      padding: 2vw;
+    }
+  
+    .overlay-container-research {
+      width: 55%; /* Adjust the width for larger screens */
+      padding: 2vw;
+    }
+    .typing-text.heading {
+      font-size: 10vw;
+    }
+  
+  }
+  
+  @media (min-width: 1440px) {
+    .typing-text.heading {
+      font-size: 9.5vw; /* or any fixed size that looks good */
+      line-height: 1.1; /* adjust line height for better spacing */
+    }
+  }
+  
+  /* Skin Cancer Identification Project */
+  /* General Elements */
+  /* Project Page */
+  body.project-body {
+    background-color: #fdd4c3;
+    color: #ffffff;
+  }
+  
+  project-body {
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+    background-color: #97c7f4;
+    color: #97c7f4;
+  }
+  
+  .project-container {
+    width: 80vw;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .project-content {
+    margin: 0 auto;
+    padding: 4vw 2vw;
+    text-align: center;
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+  
+  .project-title {
+    color: #ffffff;
+    font-size: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vw;
+    text-align: left;
+  }
+  
+  .project-title-typing {
+    color: #000000;
+    font-size: 2vw !important;
+    margin-top: 2vh;
+    margin-bottom: 2vw;
+    text-align: left;
+    font-family: 'nanum-gothic', monospace;
+    line-height: 1;
+  }
+  
+  .content-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    background-color: #fdd4c3;
+  }
+  
+  @media (min-width: 768px) {
+    .content-box {
+        height: auto; /* Adjust height or set to 'auto' for varying content */
+    }
+  }
