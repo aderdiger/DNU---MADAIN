@@ -35,9 +35,9 @@ We would like to express our gratitude to the creators of the Kaggle dataset use
 
 ## 📧 Contact Information
 For any questions, suggestions, or collaborations, please feel free to reach out to the project maintainers:
-- [Andrew Koller] https://github.com/AEKoller (mailto:andrew@andrewkoller.org)
-- [Amanda Derdiger] https://github.com/aderdiger (mailto:aderdiger15@gmail.com)
-- [Natalia Mitchell] https://github.com/nmitchell1219 (mailto:nataliamitchell19@gmail.com)
-- [Mustafa Can Ayter] https://github.com/mustafacanayter (mailto:mcayter@outlook.com) 
+- [Amanda Derdiger] https://github.com/aderdiger
+- [Andrew Koller] https://github.com/AEKoller
+- [Natalia Mitchell] https://github.com/nmitchell1219
+- [Mustafa Can Ayter] https://github.com/mustafacanayter
 
 We hope that this project contributes to the early detection and prevention of skin cancer and serves as a valuable resource for researchers and practitioners in the field. Let's work together to save lives! 💪
