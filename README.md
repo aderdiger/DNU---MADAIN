@@ -38,6 +38,6 @@ For any questions, suggestions, or collaborations, please feel free to reach out
 - Amanda Derdiger - https://github.com/aderdiger
 - Andrew Koller - https://github.com/AEKoller
 - Natalia Mitchell - https://github.com/nmitchell1219
-- Mustafa Can Ayter- https://github.com/mustafacanayter
+- Mustafa Can Ayter - https://github.com/mustafacanayter
 
 We hope that this project contributes to the early detection and prevention of skin cancer and serves as a valuable resource for researchers and practitioners in the field. Let's work together to save lives! 💪
