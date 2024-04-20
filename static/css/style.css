@@ -124,7 +124,69 @@
     border-radius: 8px;
     background-color: #fdd4c3;
   }
-  
+
+/* Styling for the rows and columns to ensure equal heights */
+.row.mb-4 {
+  display: flex; /* Makes the row a flex container */
+  align-items: stretch; /* Aligns children (columns) to stretch to fill the row */
+}
+
+/* Styling for columns to behave as flex containers too */
+.col-md-6 {
+  display: flex;
+  padding: 0; /* Remove default padding to let child (text-box or image-box) take full control */
+}
+
+/* General styling for all text and content boxes */
+.text-box, .content-box {
+  flex: 1; /* Flex grow to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  padding: 20px;
+  margin: 10px; /* Small margin for aesthetics */
+  border: 1px solid #ccc; /* Subtle border */
+  background-color: #343a40; /* Dark background for contrast */
+  color: #ffffff; /* White text for readability */
+  border-radius: 5px;
+}
+
+/* Enhancing the visual of headers inside content boxes */
+.text-box h3, .content-box h3 {
+  color: #17a2b8; /* Bright teal shade, adjust if you have a specific hex code */
+}
+
+/* Styling for image boxes to match text box heights */
+.image-box {
+  flex: 1; /* Ensures image box takes up all available space */
+  display: flex;
+  align-items: center; /* Vertical centering of the image */
+  justify-content: center; /* Horizontal centering of the image */
+  padding: 10px;
+  margin: 10px; /* Consistent margin with text boxes */
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Ensure the image resizes correctly within its flex container */
+.image-box img {
+  max-width: 100%; /* Limits the image width to its container */
+  max-height: 100%; /* Limits the image height to its container */
+  height: auto; /* Keeps the image's aspect ratio intact */
+  width: auto; /* Keeps the image's aspect ratio intact */
+}
+
+/* Add space below the disclaimer */
+.disclaimer {
+  margin-bottom: 40px; /* Adds more space below the disclaimer */
+}
+
+/* Adds more space below the Find a Dermatologist button */
+.find-dermatologist {
+  margin-bottom: 40px; /* Adjust this value as needed to create desired space */
+}
+
   @media (min-width: 768px) {
     .content-box {
         height: auto; /* Adjust height or set to 'auto' for varying content */
