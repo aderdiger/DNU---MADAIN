@@ -45,6 +45,25 @@
         </div>
     </div>
 
+    <!-- Navigation area -->
+    <div class="navigation-container">
+
+        <!-- Previous arrow -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+        <!-- Dot navigation -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <!-- Next arrow -->
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
     <!-- Sliding content starts here -->
     <div class="slideshow-container">
         <div class="slide active">
@@ -136,19 +155,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Arrows for navigation -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- Dot navigation -->
-        <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-
     </div>
 
     <script src="static/js/slideshow.js"></script>
