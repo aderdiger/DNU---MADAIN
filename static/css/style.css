@@ -178,7 +178,7 @@
   max-width: 100%; /* Limits the image width to its container */
   max-height: 100%; /* Limits the image height to its container */
   height: auto; /* Keeps the image's aspect ratio intact */
-  width: auto; /* Keeps the image's aspect ratio intact */
+  width: 100%; /* Keeps the image's aspect ratio intact */
 }
 
 /* Add space below the disclaimer */
