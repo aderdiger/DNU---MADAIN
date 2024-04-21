@@ -183,8 +183,8 @@
 }
 
 /* Adds more space below the Find a Dermatologist button */
-.find-dermatologist {
-  margin-bottom: 40px; /* Adjust this value as needed to create desired space */
+.btn-primary {
+  margin-bottom: 40px; /* Adds space below the button; adjust value as needed */
 }
 
   @media (min-width: 768px) {
