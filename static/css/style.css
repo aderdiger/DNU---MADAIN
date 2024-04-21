@@ -149,6 +149,8 @@
   background-color: #343a40; /* Dark background for contrast */
   color: #ffffff; /* White text for readability */
   border-radius: 5px;
+  height: 700px;  /* Fixed height for all boxes */
+  overflow: hidden;  /* Hides overflow to maintain the box size */
 }
 
 /* Enhancing the visual of headers inside content boxes */
@@ -167,6 +169,8 @@
   background-color: #f8f9fa;
   border-radius: 5px;
   border: 1px solid #ddd;
+  height: 700px;  /* Fixed height for all boxes */
+  overflow: hidden;  /* Hides overflow to maintain the box size */
 }
 
 /* Ensure the image resizes correctly within its flex container */
@@ -187,11 +191,11 @@
   margin-bottom: 40px; /* Adds space below the button; adjust value as needed */
 }
 
-  @media (min-width: 768px) {
-    .content-box {
-        height: auto; /* Adjust height or set to 'auto' for varying content */
-    }
+@media (min-width: 768px) {
+  .content-box {
+      height: auto; /* Adjust height or set to 'auto' for varying content */
   }
+}
 
 .slideshow-container {
     max-width: 1400px;  /* Or any other maximum width you prefer */
