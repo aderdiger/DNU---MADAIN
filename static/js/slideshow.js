@@ -25,4 +25,12 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
+// Keyboard navigation
+document.addEventListener('keydown', function(event) {
+    if (event.key === "ArrowLeft") {
+        plusSlides(-1);
+    } else if (event.key === "ArrowRight") {
+        plusSlides(1);
+    }
+});
 

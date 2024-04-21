@@ -222,37 +222,51 @@
     display: flex;
 }
 
+.navigation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;  /* Relative positioning for absolute child positioning */
+  padding: 10px 0;  /* Vertical padding for visual spacing */
+  width: 100%;  /* Full container width */
+}
+
+.dot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;  /* Horizontal margin for spacing between dots and arrows */
+}
+
 /* Style the prev and next arrows */
 .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* Position the "prev button" to the left */
-.prev {
-    left: 0;
+  font-size: 12px;  /* Large enough for easy interaction */
+  color: white;  /* Adjust color as per design */
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent for minimal design interference */
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.9);
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.active, .dot:hover {
+  background-color: #717171; /* Change dot color when active or hovered */
+}
+
+.dot-container {
+  z-index: 5;  /* Ensure dots are above any potentially overlapping elements */
 }
 
 .slideshow-container {
@@ -261,28 +275,6 @@
 
 .slide:first-child {
   background-color: transparent; /* Ensures no specific background for the first slide */
-}
-
-.dot-container {
-  position: absolute;
-  bottom: 0px; /* Adjust distance from the bottom of the container */
-  width: 100%; /* Ensures it spans the entire width of the slideshow container */
-  text-align: center; /* Centers the dots horizontally */
-}
-
-.dot {
-  cursor: pointer;
-  height: 10px;  /* Or larger for better visibility */
-  width: 10px;   /* Or larger for better visibility */
-  margin: 0 5px; /* Adjust spacing if needed */
-  background-color: #bbb; /* Ensure this color stands out against the container background */
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171; /* Change dot color when active or hovered */
 }
 
 
