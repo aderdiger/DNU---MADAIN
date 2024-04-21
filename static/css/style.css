@@ -192,3 +192,93 @@
         height: auto; /* Adjust height or set to 'auto' for varying content */
     }
   }
+
+.slideshow-container {
+    max-width: 1400px;  /* Or any other maximum width you prefer */
+    width: 100%;        /* This ensures it takes up all the allocated width */
+    height: 700px;      /* Define a fixed height for your slides */
+    margin: auto;
+    position: relative;
+    overflow: hidden;   /* Ensures no part of a slide overflows outside this container */
+}
+
+.slide {
+    width: 100%;        /* Each slide should be as wide as the container */
+    height: 700px;      /* Ensuring all slides are the same height */
+    display: none;      /* Hide slides initially */
+    text-align: left;   /* Left text and content within the slide */
+    position: relative; /* Relative positioning allows better control inside the container */
+    align-items: center;/* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    display: flex;      /* Enables the use of flexbox features */
+}
+
+/* Active slide should be visible */
+.active {
+    display: flex;
+}
+
+/* Style the prev and next arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.9);
+}
+
+.slideshow-container {
+  margin-bottom: 50px; /* Adjust the size as needed */
+}
+
+.slide:first-child {
+  background-color: transparent; /* Ensures no specific background for the first slide */
+}
+
+.dot-container {
+  position: absolute;
+  bottom: 0px; /* Adjust distance from the bottom of the container */
+  width: 100%; /* Ensures it spans the entire width of the slideshow container */
+  text-align: center; /* Centers the dots horizontally */
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;  /* Or larger for better visibility */
+  width: 10px;   /* Or larger for better visibility */
+  margin: 0 5px; /* Adjust spacing if needed */
+  background-color: #bbb; /* Ensure this color stands out against the container background */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171; /* Change dot color when active or hovered */
+}
+
+

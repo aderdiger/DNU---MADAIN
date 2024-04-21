@@ -24,3 +24,8 @@ function makePrediction() {
         console.error('Error:', error);
     });
 }
+
+
+
+
+
