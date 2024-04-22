@@ -1,7 +1,7 @@
-
+/* Responsive Media Queries for Various Screen Sizes */
 
 /* Styles for screens between 576px and 767.98px */
-@media (min-width: 576px) and (max-width: 767.98px) {
+  @media (min-width: 576px) and (max-width: 767.98px) {
     /* Adjust styles for small screens */
   }
   
@@ -20,8 +20,9 @@
     /* Adjust styles for extra large screens */
   }
   
-  /* Media Queries */
+/* Media Queries for Specific Styles */
   @media (max-width: 767.98px) {
+    /* Styling for overlay containers on smaller screens */
     .overlay-container {
       width: 55%;
       padding: 2vw;
@@ -31,7 +32,8 @@
       width: 65%; /* Adjust the width for smaller screens */
       padding: 2vw;
     }
-  
+    
+    /* Responsive font sizes for various text elements */
     .typing-text.heading {
       font-size: 10vw;
     }
@@ -46,6 +48,7 @@
   }
   
   @media (min-width: 768px) {
+    /* Consistent styling for overlay containers on medium and larger screens */
     .overlay-container {
       width: 55%;
       padding: 2vw;
@@ -55,6 +58,8 @@
       width: 55%; /* Adjust the width for larger screens */
       padding: 2vw;
     }
+
+    /* Large font size for main headings */
     .typing-text.heading {
       font-size: 10vw;
     }
@@ -62,67 +67,68 @@
   }
   
   @media (min-width: 1440px) {
+    /* Slightly smaller font size for main headings on very large screens */
     .typing-text.heading {
       font-size: 9.5vw; /* or any fixed size that looks good */
-      line-height: 1.1; /* adjust line height for better spacing */
+      line-height: 1.1; /* Improved line height for readability */
     }
   }
   
-  /* Skin Cancer Identification Project */
+  /* Skin Cancer Identification Project Specific Styles */
   /* General Elements */
   /* Project Page */
   body.project-body {
-    background-color: #fdd4c3;
-    color: #ffffff;
+    background-color: #fdd4c3; /* Light pink background */
+    color: #ffffff; /* White text for contrast */
   }
   
   project-body {
     margin: 0;
     padding: 0;
-    font-family: "Prompt", sans-serif;
-    background-color: #97c7f4;
-    color: #97c7f4;
+    font-family: "Prompt", sans-serif; /* Modern, clean font-family */
+    background-color: #97c7f4; /* Light blue background */
+    color: #97c7f4; /* Light blue text */
   }
   
   .project-container {
-    width: 80vw;
-    padding: 0;
+    width: 80vw; /* Responsive width */
+    padding: 0; /* Center align */
     margin: 0 auto;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Includes padding and border in element's width */
   }
   
   .project-content {
     margin: 0 auto;
     padding: 4vw 2vw;
-    text-align: center;
-    margin-right: 10vw;
-    margin-left: 10vw;
+    text-align: center; /* Centers text */
+    margin-right: 10vw; /* Right margin */
+    margin-left: 10vw; /* Left margin */
   }
   
   .project-title {
-    color: #ffffff;
-    font-size: 5vw;
-    margin-top: 2vh;
-    margin-bottom: 2vw;
-    text-align: left;
+    color: #ffffff; /* White text */
+    font-size: 5vw; /* Responsive font size for title */
+    margin-top: 2vh; /* Top margin based on viewport height */
+    margin-bottom: 2vw; /* Bottom margin based on viewport width */
+    text-align: left; /* Aligns text to the left */
   }
   
   .project-title-typing {
-    color: #000000;
-    font-size: 2vw !important;
-    margin-top: 2vh;
-    margin-bottom: 2vw;
-    text-align: left;
-    font-family: 'nanum-gothic', monospace;
-    line-height: 1;
+    color: #000000; 
+    font-size: 2vw !important; /* Responsive font size for title */
+    margin-top: 2vh; /* Top margin based on viewport height */
+    margin-bottom: 2vw; /* Bottom margin based on viewport height */
+    text-align: left; /* Left text */
+    font-family: 'nanum-gothic', monospace; /* Stylish monospace font for typing effect */
+    line-height: 1; /* No extra line height */
   }
   
   .content-box {
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 20px; /* Padding inside content boxes */
+    margin-bottom: 20px; /* Space below each content box */
     border: 0px solid #ccc;
-    border-radius: 8px;
-    background-color: #fdd4c3;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fdd4c3; /* Light pink background matching body */
   }
 
 /* Styling for the rows and columns to ensure equal heights */
@@ -133,7 +139,7 @@
 
 /* Styling for columns to behave as flex containers too */
 .col-md-6 {
-  display: flex;
+  display: flex; /* Enables flexbox layout */
   padding: 0; /* Remove default padding to let child (text-box or image-box) take full control */
 }
 
@@ -191,21 +197,24 @@
   margin-bottom: 40px; /* Adds space below the button; adjust value as needed */
 }
 
+/* Responsive settings for content boxes starting from 768px screen width */
 @media (min-width: 768px) {
   .content-box {
       height: auto; /* Adjust height or set to 'auto' for varying content */
   }
 }
 
+/* Styling for the slideshow container */
 .slideshow-container {
     max-width: 1400px;  /* Or any other maximum width you prefer */
     width: 100%;        /* This ensures it takes up all the allocated width */
     height: 700px;      /* Define a fixed height for your slides */
-    margin: auto;
-    position: relative;
+    margin: auto;       /* Centers the slideshow horizontally */
+    position: relative; /* Enables positioning of internal elements absolutely relative to this container */
     overflow: hidden;   /* Ensures no part of a slide overflows outside this container */
 }
 
+/* Styling for individual slides within the slideshow */
 .slide {
     width: 100%;        /* Each slide should be as wide as the container */
     height: 700px;      /* Ensuring all slides are the same height */
@@ -219,9 +228,10 @@
 
 /* Active slide should be visible */
 .active {
-    display: flex;
+    display: flex; /* Flex display to enable flex properties */
 }
 
+/* Styling for the navigation container that holds navigation arrows and dots */
 .navigation-container {
   display: flex;
   align-items: center;
@@ -231,6 +241,7 @@
   width: 100%;  /* Full container width */
 }
 
+/* Styling for the dot container which holds navigational dots */
 .dot-container {
   display: flex;
   align-items: center;
@@ -242,39 +253,42 @@
 .prev, .next {
   font-size: 12px;  /* Large enough for easy interaction */
   color: white;  /* Adjust color as per design */
-  cursor: pointer;
-  padding: 10px;
+  cursor: pointer; /* Cursor indicates clickable */
+  padding: 10px; /* Padding around arrows for easier clicking */
   background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent for minimal design interference */
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Style changes for arrows on hover */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.9); /* Darker background on hover for better visibility */
 }
 
+/* Styling for navigation dots */
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px;
+  background-color: #bbb; /* Default color of dots */
+  border-radius: 50%; /* Makes dots circular */
+  display: inline-block; /* Allows dots to sit inline with spacing */
+  margin: 0 5px; /* Horizontal spacing between dots */
 }
 
+/* Styling changes when a dot is active or hovered */
 .active, .dot:hover {
-  background-color: #717171; /* Change dot color when active or hovered */
+  background-color: #717171; /* Dark color when dot is active or hovered for contrast */
 }
 
+/* Ensures the dot container is layered above other elements if needed */
 .dot-container {
-  z-index: 5;  /* Ensure dots are above any potentially overlapping elements */
+  z-index: 5;  
 }
 
+/* Adds bottom margin to slideshow container for spacing after the slideshow */
 .slideshow-container {
-  margin-bottom: 50px; /* Adjust the size as needed */
+  margin-bottom: 50px; /* Space below slideshow */
 }
 
+/* Ensures the first slide does not have a specific background color */
 .slide:first-child {
-  background-color: transparent; /* Ensures no specific background for the first slide */
+  background-color: transparent; 
 }
-
-
