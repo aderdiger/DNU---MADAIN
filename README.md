@@ -59,9 +59,10 @@ Once we chose our primary model, we continued to fine-tune it in an effort to in
 
 2. Weighting scheme testing 1 - The Cancer Catcher (run4; v7)
     a. All testing to this point utilized TensorFlow's 'balanced' weighting system to account for large imblanace in classes.
-    b. Tested effectiveness of different weights 
-    c. Increased weighting for underrepresented classes by a factor of 4x
-    d. Note the recall for 'mel' at .70
+    b. 4x on 'bcc' and 'akeic', 20x on 'mel'
+    c. Tested effectiveness of different weights 
+    d. Increased weighting for underrepresented classes by a factor of 4x
+    e. Note the recall for 'mel' at .70
 
     ![image](https://github.com/aderdiger/MADAIN/blob/a90a26d55caa387aa8614be2b8cad85adb77fffb/run4/run7/visualizations/roc_curve_InceptionV3_Adam.png)
     
@@ -80,14 +81,25 @@ Once we chose our primary model, we continued to fine-tune it in an effort to in
        macro avg          0.12      0.14      0.08      2003
        weighted avg       0.44      0.16      0.16      2003
 
-3. Binary classification testing (run5; v8)
+4. Binary classification testing (run5; v8)
     a. Testing conducted at same time as weighting scheme testing
     b. All testing to this point involved a multiclass classifier.
     c. Tested to effectiveness of a binary classifier as opposed to a multiclass classifier.
-    d. Did not make any difference from previous models
+    d. Results unremarkable
+
+   ![image](https://github.com/aderdiger/MADAIN/blob/9736cacc4e400c7f9d526d057b93111dd322f4d7/run5/visualizations/roc_curve_InceptionV3_Adam.png)
+
+                       precision    recall  f1-score   support
+
+              benign      0.79      0.58      0.67      1612
+           cancerous      0.17      0.37      0.24       391
+
+       accuracy                               0.54      2003
+       macro avg          0.48      0.47      0.45      2003
+       weighted avg       0.67      0.54      0.59      2003
 
 
-4. Custom weighting - 4x on 'bcc' and 'akeic', 20x on 'mel' (run7)
+5. Custom weighting - 4x on 'bcc' and 'akeic', 20x on 'mel' (run7)
     a. 
 6. Inverse proportional weighting (run8)
     a. Weighted classes based on the inverse of their frequency
