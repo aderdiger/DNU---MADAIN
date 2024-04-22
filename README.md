@@ -57,7 +57,7 @@ weighted avg       0.48      0.37      0.41      2003
 
     c. Resolution: test at lower epochs; weights need to be adjusted 
 
-2. Weighting scheme testing (run4)
+2. Weighting scheme testing 1 - The Cancer Catcher(run4)
     a. All testing to this point utilized TensorFlow's 'balanced' weighting system to account for large imblanace in classes.
     b. Tested effectiveness of different weights 
     c. Increased weighting for underrepresented classes by a factor of 4x
