@@ -57,11 +57,11 @@ Once we chose our primary model, we continued to fine-tune it in an effort to in
 
     c. Resolution: test at lower epochs; weights need to be adjusted 
 
-2. Weighting scheme testing 1 - The Cancer Catcher(run4)
+2. Weighting scheme testing 1 - The Cancer Catcher (run4; v7)
     a. All testing to this point utilized TensorFlow's 'balanced' weighting system to account for large imblanace in classes.
     b. Tested effectiveness of different weights 
     c. Increased weighting for underrepresented classes by a factor of 4x
-    d. Results unremarkable 
+    d. Note the recall for 'mel' at .70
 
     ![image](https://github.com/aderdiger/MADAIN/blob/a90a26d55caa387aa8614be2b8cad85adb77fffb/run4/run7/visualizations/roc_curve_InceptionV3_Adam.png)
     
