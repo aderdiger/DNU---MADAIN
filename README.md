@@ -40,7 +40,7 @@ Once we chose our primary model, we continued to fine-tune it in an effort to in
 
     ![image](https://github.com/aderdiger/MADAIN/blob/main/run3/visualizations/roc_curve_InceptionV3_Adam.png)
 
-    precision    recall  f1-score   support
+               precision    recall  f1-score   support
 
        akiec       0.02      0.05      0.03        65
          bcc       0.05      0.09      0.07       103
@@ -49,10 +49,10 @@ Once we chose our primary model, we continued to fine-tune it in an effort to in
          mel       0.11      0.17      0.13       223
           nv       0.68      0.50      0.57      1341
         vasc       0.01      0.04      0.02        28
-
-    accuracy                           0.37      2003
-   macro avg       0.14      0.13      0.13      2003
-weighted avg       0.48      0.37      0.41      2003
+   
+       accuracy                               0.37      2003
+       macro avg          0.14      0.13      0.13      2003
+       weighted avg       0.48      0.37      0.41      2003
 
 
     c. Resolution: test at lower epochs; weights need to be adjusted 
@@ -66,7 +66,7 @@ weighted avg       0.48      0.37      0.41      2003
     ![image](https://github.com/aderdiger/MADAIN/blob/a90a26d55caa387aa8614be2b8cad85adb77fffb/run4/run7/visualizations/roc_curve_InceptionV3_Adam.png)
     
 
-    precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
        akiec       0.04      0.06      0.05        65
          bcc       0.06      0.07      0.06       103
@@ -75,10 +75,10 @@ weighted avg       0.48      0.37      0.41      2003
          mel       0.11      0.70      0.19       223
           nv       0.63      0.12      0.20      1341
         vasc       0.02      0.04      0.03        28
-
-    accuracy                           0.16      2003
-   macro avg       0.12      0.14      0.08      2003
-weighted avg       0.44      0.16      0.16      2003
+   
+       accuracy                               0.16      2003
+       macro avg          0.12      0.14      0.08      2003
+       weighted avg       0.44      0.16      0.16      2003
 
 3. Binary classification testing (run5; v8)
     a. Testing conducted at same time as weighting scheme testing
